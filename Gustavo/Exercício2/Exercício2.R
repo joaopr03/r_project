@@ -1,5 +1,5 @@
 #Reading the csv file
-setwd("C:\\Users\\gusta\\OneDrive\\Ambiente de Trabalho\\IST\\2º Ano 2º Semestre\\PE\\Projeto Computacional")
+setwd("C:\\Users\\gusta\\OneDrive\\Ambiente de Trabalho\\IST\\2º Ano 2º Semestre\\PE\\Projeto Computacional\\Gustavo\\Exercício2")
 data <- read.csv("Exercício2.csv", sep=",", header=TRUE)
 
 
