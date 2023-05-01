@@ -3,7 +3,7 @@ library(openxlsx)
 library(ggplot2)
 
 #Reading excel file and creating necessary variables
-setwd("C:\\Users\\gusta\\OneDrive\\Ambiente de Trabalho\\IST\\2º Ano 2º Semestre\\PE\\Projeto Computacional")
+setwd("C:\\Users\\gusta\\OneDrive\\Ambiente de Trabalho\\IST\\2º Ano 2º Semestre\\PE\\Projeto Computacional\\Gustavo\\Exercício1")
 excelTable <- read.xlsx(xlsxFile="Exercício1.xlsx", sheet = 1, rows = c(1, 224:575),colNames = TRUE)
 year <- convertToDate(excelTable$tempo)
 excelTable <- subset(excelTable, tempo >= 1986, select = c("ddesemp", "tpp"))
