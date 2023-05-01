@@ -2,7 +2,7 @@
 library(ggplot2)
 
 #Reading the txt file
-setwd("C:\\Users\\gusta\\OneDrive\\Ambiente de Trabalho\\IST\\2º Ano 2º Semestre\\PE\\Projeto Computacional")
+setwd("C:\\Users\\gusta\\OneDrive\\Ambiente de Trabalho\\IST\\2º Ano 2º Semestre\\PE\\Projeto Computacional\\Gustavo\\Exercício3")
 data <- read.delim("Exercício3.txt", header = TRUE, sep = "\t", quote = "", dec = ".", fill = TRUE, comment.char = "")
 
 # Filter for Italy and the age groups
