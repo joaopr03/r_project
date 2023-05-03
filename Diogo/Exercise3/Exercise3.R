@@ -1,15 +1,15 @@
 setwd("C:\\Users\\diogo\\Desktop\\IST\\2\\2_semestre\\PE\\Projeto\\Exercise3")
 
-#read data from txt file
+# Read data from txt file
 dataOCDE <- read.delim("GENDER_EMP_19032023152556091.txt", header=TRUE)
 
-#filter data by country, age group, sex and variable
+# Filter data as requested in the exercise
 filteredData <- dataOCDE[dataOCDE$Country == "Sweden" & dataOCDE$TIME == "2019" &
                            dataOCDE$Age.Group %in% c("15-24", "25-54", "55-64") &
                            dataOCDE$Sex %in% c("Men", "Women") &
                            dataOCDE$IND == "EMP1", ]
 library(ggplot2)
-#create graphic using ggplot package
+# Create graphic using ggplot package
 ggplot(filteredData, aes(x = AGE, y = Value, fill = SEX)) + 
   geom_col(position = "dodge") +
   scale_x_discrete(labels = c("15-24", "25-54", "55-64")) + 

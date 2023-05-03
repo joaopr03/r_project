@@ -22,6 +22,6 @@ for (t in tempos) {
 
 #4)
 media <- mean(ocorrencias)
-esperado <- lambda
+esperado <- lambda        #teorico = lambda x tamanho do intervalo
 desvio <- abs(media - esperado)
 cat(round(desvio, 4))

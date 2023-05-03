@@ -4,7 +4,9 @@ p <- 0.3
 n <- 1139
 
 #transformação inversa para gerar distribuição geométrica
+#i)
 u <- runif(n)
+#ii) função inversa
 x <- floor(log(u/p) / log(1-p))
 
 #calcular média e desvio padrão da amostra
