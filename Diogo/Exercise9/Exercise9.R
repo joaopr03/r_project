@@ -49,9 +49,10 @@ for (i in 1:7) {
 }
 
 # Criar gráfico
-plot(ns, medias, main = "Diferenças médias em função do tamanho da amostra",
+plot(ns, medias, type = "b", main = "Diferenças médias em função do tamanho da amostra",
      ylab = "Diferença média entre os comprimentos dos ICs", 
-     xlab = "Tamanho da amostra (n)")
+     xlab = "Tamanho da amostra (n)",
+     col = "#006699", pch = 19)
 
 # Comentários:
 
